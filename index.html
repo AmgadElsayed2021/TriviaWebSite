@@ -1,10 +1,181 @@
 <html>
     <head>
         <title>tivia</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
-        <div>
-            <p>welcome to trivia</p>
+
+    <form method="POST" action="/submitquiz.cfm"> 
+       
+        <div class="container" id="question1">
+            <div class="row box qnbox">
+                <div class="col-sm-12">
+                    <div class="qntxtbox"><b><span style="color:green;">1.</span> What is the mother's first priority for her new kitten?</b>
+                    </div><br>
+    
+                    <div class="anslist">
+                
+                        <div style="margin-bottom:2px;" onmouseover="answerOver(this);" onmouseout="answerOut(this);" onclick="selectAnswer(this);"><input name="q1" value="To smell it" type="radio" onclick="answerSelected(this);"> To smell it</div>
+                        <div style="margin-bottom:2px;" onmouseover="answerOver(this);" onmouseout="answerOut(this);" onclick="selectAnswer(this);"><input name="q1" value="To give it a bowl of food" type="radio" onclick="answerSelected(this);"> To give it a bowl of food</div>
+                        <div style="margin-bottom:2px;" onmouseover="answerOver(this);" onmouseout="answerOut(this);" onclick="selectAnswer(this);"><input name="q1" value="To get it to feed" type="radio" onclick="answerSelected(this);"> To get it to feed</div>
+                        <div style="margin-bottom:2px;" onmouseover="answerOver(this);" onmouseout="answerOut(this);" onclick="selectAnswer(this);"><input name="q1" value="To get it breathing" type="radio" onclick="answerSelected(this);"> To get it breathing</div>
+                        <br> 
+                    </div>                
+                </div>
+                
+            </div>
         </div>
-    </body>
-</html>
+    
+        <div class="container" id="question2">
+            <div class="row box qnbox">
+                <div class="col-sm-12">
+                    <div class="qntxtbox"><b><span style="color:green;">2.</span> As well as sustenance what does a mother's milk pass on to her kittens?</b>   
+                    </div><br>
+                    <div class="anslist">
+                        <div style="margin-bottom:2px;" onmouseover="answerOver(this);" onmouseout="answerOut(this);" onclick="selectAnswer(this);"><input name="q2" value="A sense of his mother's smell" type="radio" onclick="answerSelected(this);"> A sense of his mother's smell</div>
+                        <div style="margin-bottom:2px;" onmouseover="answerOver(this);" onmouseout="answerOut(this);" onclick="selectAnswer(this);"><input name="q2" value="The substance which makes cat's tongues rough" type="radio" onclick="answerSelected(this);"> The substance which makes cat's tongues rough</div>                
+                        <div style="margin-bottom:2px;" onmouseover="answerOver(this);" onmouseout="answerOut(this);" onclick="selectAnswer(this);"><input name="q2" value="Thicker fur" type="radio" onclick="answerSelected(this);"> Thicker fur</div>                
+                        <div style="margin-bottom:2px;" onmouseover="answerOver(this);" onmouseout="answerOut(this);" onclick="selectAnswer(this);"><input name="q2" value="Immunity from diseases" type="radio" onclick="answerSelected(this);"> Immunity from diseases</div>
+                        <br> 
+                    </div>                
+                </div>
+                
+            </div>
+        </div>
+    
+        <div class="container" id="question3">
+            <div class="row box qnbox">
+                <div class="col-sm-12">
+                    <div class="qntxtbox"><b><span style="color:green;">3.</span> There are 4 basic stages to a cat's development. The Neonatal Phase, the Socialisation phase and the Adult phase are 3, what is the fourth?</b>
+                    </div><br>
+                    <div class="anslist">
+                        <div style="margin-bottom:2px;" onmouseover="answerOver(this);" onmouseout="answerOut(this);" onclick="selectAnswer(this);"><input name="q3" value="Childish phase" type="radio" onclick="answerSelected(this);"> Childish phase</div>
+                        <div style="margin-bottom:2px;" onmouseover="answerOver(this);" onmouseout="answerOut(this);" onclick="selectAnswer(this);"><input name="q3" value="Youth phase" type="radio" onclick="answerSelected(this);"> Youth phase</div>
+                        <div style="margin-bottom:2px;" onmouseover="answerOver(this);" onmouseout="answerOut(this);" onclick="selectAnswer(this);"><input name="q3" value="Juvenile phase" type="radio" onclick="answerSelected(this);"> Juvenile phase</div>
+                        <div style="margin-bottom:2px;" onmouseover="answerOver(this);" onmouseout="answerOut(this);" onclick="selectAnswer(this);"><input name="q3" value="Infantile phase" type="radio" onclick="answerSelected(this);"> Infantile phase</div>
+                        <br> 
+                    </div>                
+                </div>
+            </div>
+        </div>
+    
+        <div class="container" id="question4">
+            <div class="row box qnbox">
+                 <div class="col-sm-12">
+                    <div class="qntxtbox"><b><span style="color:green;">4.</span> When do the kittens' eyes open?</b>
+                    </div><br>
+                    <div class="anslist">
+                        <div style="margin-bottom:2px;" onmouseover="answerOver(this);" onmouseout="answerOut(this);" onclick="selectAnswer(this);"><input name="q4" value="1st day" type="radio" onclick="answerSelected(this);"> 1st day</div>
+                        <div style="margin-bottom:2px;" onmouseover="answerOver(this);" onmouseout="answerOut(this);" onclick="selectAnswer(this);"><input name="q4" value="2 months" type="radio" onclick="answerSelected(this);"> 2 months</div>
+                        <div style="margin-bottom:2px;" onmouseover="answerOver(this);" onmouseout="answerOut(this);" onclick="selectAnswer(this);"><input name="q4" value="4 to 6 weeks" type="radio" onclick="answerSelected(this);"> 4 to 6 weeks</div>
+                        <div style="margin-bottom:2px;" onmouseover="answerOver(this);" onmouseout="answerOut(this);" onclick="selectAnswer(this);"><input name="q4" value="1 to 3 weeks" type="radio" onclick="answerSelected(this);"> 1 to 3 weeks</div>
+                        <br> 
+                    </div>                
+                </div>
+            </div>
+        </div>
+    
+        <div class="container" id="question5">
+            <div class="row box qnbox">
+                <div class="col-sm-12">
+                    <div class="qntxtbox"><b><span style="color:green;">5.</span> When does the kittens' hearing develop?</b>
+                    </div><br>
+                    <div class="anslist">
+                        <div style="margin-bottom:2px;" onmouseover="answerOver(this);" onmouseout="answerOut(this);" onclick="selectAnswer(this);"><input name="q5" value="2nd week" type="radio" onclick="answerSelected(this);"> 2nd week</div>
+                        <div style="margin-bottom:2px;" onmouseover="answerOver(this);" onmouseout="answerOut(this);" onclick="selectAnswer(this);"><input name="q5" value="1st day" type="radio" onclick="answerSelected(this);"> 1st day</div>
+                        <div style="margin-bottom:2px;" onmouseover="answerOver(this);" onmouseout="answerOut(this);" onclick="selectAnswer(this);"><input name="q5" value="In the womb" type="radio" onclick="answerSelected(this);"> In the womb</div>
+                        <div style="margin-bottom:2px;" onmouseover="answerOver(this);" onmouseout="answerOut(this);" onclick="selectAnswer(this);"><input name="q5" value="5th week" type="radio" onclick="answerSelected(this);"> 5th week</div>
+                        <br> 
+                    </div>                
+                </div>
+            </div>
+        </div>
+    
+        <div class="container" id="question6">
+            <div class="row box qnbox">
+                <div class="col-sm-12">
+                    <div class="qntxtbox"><b><span style="color:green;">6.</span> Which week do the kittens' milk teeth start to appear?</b>
+                    </div><br>
+                    <div class="anslist">
+                        <div style="margin-bottom:2px;" onmouseover="answerOver(this);" onmouseout="answerOut(this);" onclick="selectAnswer(this);"><input name="q6" value="Week 3" type="radio" onclick="answerSelected(this);"> Week 3</div>
+                        <div style="margin-bottom:2px;" onmouseover="answerOver(this);" onmouseout="answerOut(this);" onclick="selectAnswer(this);"><input name="q6" value="Week 7" type="radio" onclick="answerSelected(this);"> Week 7</div>
+                        <div style="margin-bottom:2px;" onmouseover="answerOver(this);" onmouseout="answerOut(this);" onclick="selectAnswer(this);"><input name="q6" value="Day 1" type="radio" onclick="answerSelected(this);"> Day 1</div>
+                        <div style="margin-bottom:2px;" onmouseover="answerOver(this);" onmouseout="answerOut(this);" onclick="selectAnswer(this);"><input name="q6" value="3 months" type="radio" onclick="answerSelected(this);"> 3 months</div>
+                        <br> 
+                    </div>                
+                </div>
+            </div>
+        </div>
+
+        <div class="container" id="question7">
+            <div class="row box qnbox">
+                <div class="col-sm-12">
+                    <div class="qntxtbox"><b><span style="color:green;">7.</span> What week will the mother begin to discourage kittens from suckling, thus starting weaning?</b>
+                    </div><br>
+                    <div class="anslist">
+                        <div style="margin-bottom:2px;" onmouseover="answerOver(this);" onmouseout="answerOut(this);" onclick="selectAnswer(this);"><input name="q7" value="1st day" type="radio" onclick="answerSelected(this);"> 1st day</div>
+                        <div style="margin-bottom:2px;" onmouseover="answerOver(this);" onmouseout="answerOut(this);" onclick="selectAnswer(this);"><input name="q7" value="6 weeks" type="radio" onclick="answerSelected(this);"> 6 weeks</div>
+                        <div style="margin-bottom:2px;" onmouseover="answerOver(this);" onmouseout="answerOut(this);" onclick="selectAnswer(this);"><input name="q7" value="3 months" type="radio" onclick="answerSelected(this);"> 3 months</div>
+                        <div style="margin-bottom:2px;" onmouseover="answerOver(this);" onmouseout="answerOut(this);" onclick="selectAnswer(this);"><input name="q7" value="10 weeks" type="radio" onclick="answerSelected(this);"> 10 weeks</div>
+                        <br> 
+                    </div>                
+                </div>
+            </div>
+        </div>
+    
+        <div class="container" id="question8">
+            <div class="row box qnbox">
+                <div class="col-sm-12">
+                    <div class="qntxtbox"><b><span style="color:green;">8.</span> Once kittens start interacting with other cats and humans they begin to use body language. For example, pricked ears and tail held high means a cat or kitten is feeling friendly and approachable. What does it mean when a cat or kittens' ears are flat against the head, the back is arched and the tail is completely erect?</b>
+                    </div><br>
+                    <div class="anslist">
+                        <div style="margin-bottom:2px;" onmouseover="answerOver(this);" onmouseout="answerOut(this);" onclick="selectAnswer(this);"><input name="q8" value="The cat is asleep" type="radio" onclick="answerSelected(this);"> The cat is asleep</div>
+                        <div style="margin-bottom:2px;" onmouseover="answerOver(this);" onmouseout="answerOut(this);" onclick="selectAnswer(this);"><input name="q8" value="The cat wants to eat" type="radio" onclick="answerSelected(this);"> The cat wants to eat</div>
+                        <div style="margin-bottom:2px;" onmouseover="answerOver(this);" onmouseout="answerOut(this);" onclick="selectAnswer(this);"><input name="q8" value="The cat is having a seizure" type="radio" onclick="answerSelected(this);"> The cat is having a seizure</div>
+                        <div style="margin-bottom:2px;" onmouseover="answerOver(this);" onmouseout="answerOut(this);" onclick="selectAnswer(this);"><input name="q8" value="The cat is frightened" type="radio" onclick="answerSelected(this);"> The cat is frightened</div>
+                        <br> 
+                    </div>                
+                </div>
+            </div>
+        </div>
+    
+        <div class="container" id="question9">
+            <div class="row box qnbox">
+                <div class="col-sm-12">
+                    <div class="qntxtbox"><b><span style="color:green;">9.</span> Kittens can purr.</b>
+                    </div><br>
+                    <div class="anslist">
+                        <div onmouseover="answerOver(this);" onmouseout="answerOut(this);" onclick="selectAnswer(this);"><input name="q9" value="t" type="radio" onclick="answerSelected(this);"> True</div>
+                        <div onmouseover="answerOver(this);" onmouseout="answerOut(this);" onclick="selectAnswer(this);"><input name="q9" value="f" type="radio" onclick="answerSelected(this);"> False</div>
+                        <br>       
+                    </div>                
+                </div>
+            </div>
+        </div>
+    
+        <div class="container" id="question10">
+            <div class="row box qnbox">
+                <div class="col-sm-12">
+                    <div class="qntxtbox"><b><span style="color:green;">10.</span> What is the very earliest date that a kitten should be rehomed?</b>
+                    </div><br>
+                    <div class="anslist">
+                        <div style="margin-bottom:2px;" onmouseover="answerOver(this);" onmouseout="answerOut(this);" onclick="selectAnswer(this);"><input name="q10" value="8 weeks" type="radio" onclick="answerSelected(this);"> 8 weeks</div>
+                        <div style="margin-bottom:2px;" onmouseover="answerOver(this);" onmouseout="answerOut(this);" onclick="selectAnswer(this);"><input name="q10" value="4 weeks" type="radio" onclick="answerSelected(this);"> 4 weeks</div>
+                        <div style="margin-bottom:2px;" onmouseover="answerOver(this);" onmouseout="answerOut(this);" onclick="selectAnswer(this);"><input name="q10" value="2 weeks" type="radio" onclick="answerSelected(this);"> 2 weeks</div>
+                        <div style="margin-bottom:2px;" onmouseover="answerOver(this);" onmouseout="answerOut(this);" onclick="selectAnswer(this);"><input name="q10" value="16 weeks" type="radio" onclick="answerSelected(this);"> 16 weeks</div>
+                        <br> 
+                    </div>                
+                </div>
+            </div>
+        </div>
+    
+        <div class="container">
+            <div class="row box introbox" style="margin-top:15px;"></div>
+            <div class="col-sm-12">
+                <div style="text-align:center;"><input type="submit" style="height:50px; width:250px;font-size:16px;text-align:center;" value="Submit my Answers!"></div>
+            </div>
+        </div>
+    </div>
+    </form>
+    
+    </html>
