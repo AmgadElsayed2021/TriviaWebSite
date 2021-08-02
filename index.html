@@ -1,168 +1,27 @@
-<html>
-    <head>
-        <title>Trivia</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <script type="text/javascript" src="trivia.js"></script>
-        
-    </head>
-    <body>
-        
-        <header>
-            <img src="history.jfif" alt="logo" height="200" width="350">
-            <img src="h2.jpg" alt="logo2" height="200" width="350">
-            <img src="h3.jfif" alt="logo3" height="200" width="350">
-            <img src="h4.jfif" alt="logo4" height="200" width="350">
-        </header>
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/409704a3fa.js" crossorigin="anonymous"></script>
+</head>
 
-        <h1>History trivia</h1>
-        <form name ="trivia" id= "trivia"> 
-            <div >
-                <h3>1. What was the shortest war in human history?</h3>
-                <p><input type="radio" name="q1" value="answer A"> The war between England and Zanzibar</p>
-                <p><input type="radio" name="q1" value="answer B">The war between Greece and France</p>
-                <p><input type="radio" name="q1" value="answer C">The war between Egypt and Israel</p>
-                <p><input type="radio" name="q1" value="answer D">The war between Germany and italy</p>
-            </div>
-        
-            <div >
-                <h3>2. What was the name of the research ship Charles Darwin traveled with?</h3>
-                <p><input type="radio" name="q2" value="answer A"> Charlotte</p>
-                <p><input type="radio" name="q2" value="answer B">The Beagle</p>
-                <p><input type="radio" name="q2" value="answer C">SeaMermaid</p>
-                <p><input type="radio" name="q2" value="answer D">Titanic</p>
-            </div>
+<body>
+    <div class="container">
+        <div id="home" class="flex-column flexc-center">
+            <img src="history.jfif" alt="pic" width="470" height="300px">
+            <h1>Are you ready?</h1>
+            <!-- create a class buttonfor play and high scores -->
+            <a href="game.html" class="btn">Play</a>
+            <!-- add a crown tag pic to the high score btn -->
+            <a href="highscore.html" id="highscorebtn" class="btn">High Scores<i class="fas fa-crown"></i></a>
+        </div>
+    </div>
+    <Script src="highScores.js"></Script>
+</body>
 
-            <div >
-                <h3>3. How many years did the 100 years war last?</h3>
-                <p><input type="radio" name="q3" value="answer A"> 100 years</p>
-                <p><input type="radio" name="q3" value="answer B">106 years</p>
-                <p><input type="radio" name="q3" value="answer C">116 years</p>
-                <p><input type="radio" name="q3" value="answer D">89 years</p>
-            </div>
-
-            <div >
-                <h3>4. How long did the war between England and Zanzibar last?</h3>
-                <p><input type="radio" name="q4" value="answer A"> 3 hours</p>
-                <p><input type="radio" name="q4" value="answer B">between 8 to 12 hours</p>
-                <p><input type="radio" name="q4" value="answer C">3 days</p>
-                <p><input type="radio" name="q4" value="answer D">Between 38 & 45 minutes</p>
-            </div>
-
-            <div >
-                <h3>5. In which year did Hitler commit suicide?</h3>
-                <p><input type="radio" name="q5" value="answer A"> 1944</p>
-                <p><input type="radio" name="q5" value="answer B">1945</p>
-                <p><input type="radio" name="q5" value="answer C">1946</p>
-                <p><input type="radio" name="q5" value="answer D">1948</p>
-            </div>
-
-            <div >
-                <h3>6. In which year was John F. Kennedy assassinated?</h3>
-                <p><input type="radio" name="q6" value="answer A"> 1962</p>
-                <p><input type="radio" name="q6" value="answer B">1963</p>
-                <p><input type="radio" name="q6" value="answer C">1964</p>
-                <p><input type="radio" name="q6" value="answer D">1967</p>
-            </div>
-
-            <div >
-                <h3>7. One of the ancient world wonders, the “Hanging Gardens,” was found in which city?</h3>
-                <p><input type="radio" name="q7" value="answer A"> Cairo</p>
-                <p><input type="radio" name="q7" value="answer B">Alexandria</p>
-                <p><input type="radio" name="q7" value="answer C">Babylon</p>
-                <p><input type="radio" name="q7" value="answer D">Troy</p>
-            </div>
-
-            <div >
-                <h3>8. Greenland was a colony of which country until 1981?</h3>
-                <p><input type="radio" name="q8" value="answer A"> Canada</p>
-                <p><input type="radio" name="q8" value="answer B">Denmark</p>
-                <p><input type="radio" name="q8" value="answer C">Russia</p>
-                <p><input type="radio" name="q8" value="answer D">USA</p>
-            </div>
-
-            <div >
-                <h3>9. How many days in a week were there in ancient Roman times?</h3>
-                <p><input type="radio" name="q9" value="answer A"> 5</p>
-                <p><input type="radio" name="q9" value="answer B">6</p>
-                <p><input type="radio" name="q9" value="answer C">7</p>
-                <p><input type="radio" name="q9" value="answer D">8</p>
-            </div>
-
-            <div >
-                <h3>10. Which organization was awarded the Nobel Peace Prize in 1917?</h3>
-                <p><input type="radio" name="q10" value="answer A"> The Red Cross</p>
-                <p><input type="radio" name="q10" value="answer B">The UNICEF</p>
-                <p><input type="radio" name="q10" value="answer C">OPEC</p>
-                <p><input type="radio" name="q10" value="answer D">UN</p>
-            </div>
-
-            <div >
-                <h3>11. How many days was William Harrison President of the United States?</h3>
-                <p><input type="radio" name="q11" value="answer A"> 11 days</p>
-                <p><input type="radio" name="q11" value="answer B">25 days</p>
-                <p><input type="radio" name="q11" value="answer C">32 days</p>
-                <p><input type="radio" name="q11" value="answer D">46 days</p>
-            </div>
-        
-            <div >
-                <h3>12.Which King of England was executed in 1649 during the English Civil War?</h3>
-                <p><input type="radio" name="q12" value="answer A"> Charles I</p>
-                <p><input type="radio" name="q12" value="answer B">The Charles II</p>
-                <p><input type="radio" name="q12" value="answer C">Charles V</p>
-                <p><input type="radio" name="q12" value="answer D">Charles VI</p>
-            </div>
-
-            <div >
-                <h3>13. Which city has more than third of the world monuments</h3>
-                <p><input type="radio" name="q13" value="answer A"> Luxor</p>
-                <p><input type="radio" name="q13" value="answer B">Cairo</p>
-                <p><input type="radio" name="q13" value="answer C">Dubai</p>
-                <p><input type="radio" name="q13" value="answer D">London</p>
-            </div>
-
-            <div >
-                <h3>14. Where was the oldest civilization on Earth</h3>
-                <p><input type="radio" name="q14" value="answer A">China</p>
-                <p><input type="radio" name="q14" value="answer B">India</p>
-                <p><input type="radio" name="q14" value="answer C">Spain</p>
-                <p><input type="radio" name="q14" value="answer D">Egypt</p>
-            </div>
-
-            <div >
-                <h3>15. The ancient city of Rome was built on how many hills?</h3>
-                <p><input type="radio" name="q15" value="answer A"> 6</p>
-                <p><input type="radio" name="q15" value="answer B">7</p>
-                <p><input type="radio" name="q15" value="answer C">8</p>
-                <p><input type="radio" name="q15" value="answer D">5</p>
-            </div>
-
-            <div >
-                <h3>16.Who is known for running through the streets crying Eureka?</h3>
-                <p><input type="radio" name="q16" value="answer A"> Archimedes</p>
-                <p><input type="radio" name="q16" value="answer B">Aristotle</p>
-                <p><input type="radio" name="q16" value="answer C">columbus</p>
-                <p><input type="radio" name="q16" value="answer D">Al Idrisi</p>
-            </div>
-
-            <div >
-                <h3>17.Which century did the French Revolution take place in?</h3>
-                <p><input type="radio" name="q17" value="answer A"> 15</p>
-                <p><input type="radio" name="q17" value="answer B">16</p>
-                <p><input type="radio" name="q17" value="answer C">17</p>
-                <p><input type="radio" name="q17" value="answer D">18</p>
-            </div>
-
-            <div >
-                <h3>18.The Tallest building in ancient history and still one of the world wonders</h3>
-                <p><input type="radio" name="q18" value="answer A"> The Babylon Gardens</p>
-                <p><input type="radio" name="q18" value="answer B">The Light House of Alexandria</p>
-                <p><input type="radio" name="q18" value="answer C">The Great Pyramid of Giza</p>
-                <p><input type="radio" name="q18" value="answer D">Abu simple temple</p>
-            </div>
-
-         
-        </form>
-        <p id="result"></p>
-    </body>
 </html>
