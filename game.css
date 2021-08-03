@@ -1,0 +1,136 @@
+/* need to import some fancy fonts from google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Style+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Style+Script&display=swap");
+
+body {
+  color: #ffffff;
+}
+.choice-container {
+  display: flex;
+  margin-bottom: 0.8rem;
+  width: 100%;
+  border-radius: 4px;
+  background: rgb(18, 93, 255);
+  font-size: 3rem;
+  min-width: 80rem;
+}
+
+/* add effects to the mouse while hovering on the container */
+.choice-container:hover {
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(6, 103, 247, 0.5);
+  transform: scale(1.02);
+  transform: transform 100ms;
+}
+
+.choice-prefix {
+  padding: 2rem 2.5rem;
+  color: #ffffff;
+  font-size: x-large;
+}
+
+#question {
+  color: rgb(246, 252, 252);
+  font-family: Fredericka the Great, cursive;
+}
+
+.choice-text {
+  padding: 2rem;
+  width: 100%;
+  font-family: Antic Didone, cursive;
+  font-size: x-large;
+}
+
+/* set color for correct and wrong answers */
+.correct {
+  background: linear-gradient(
+    32deg,
+    rgba(11, 223, 36) 0%,
+    rgba(41, 232, 111) 100%
+  );
+}
+
+.incorrect {
+  background: linear-gradient(
+    32deg,
+    rgba(230, 29, 29, 1) 0%,
+    rgba(224, 11, 11, 1) 100%
+  );
+}
+
+/* heads up display */
+#hud {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 3rem;
+  height: 15rem;
+}
+
+.hud-prefix {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.hud-main-text {
+  text-align: center;
+}
+
+/* style the progress bar */
+#progress-bar {
+  width: 20rem;
+  height: 3rem;
+  border: 0.2rem solid rgb(11, 223, 30);
+  margin-top: 2rem;
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+#progress-BarFull {
+  height: 100%;
+  background: rgb(11, 223, 36);
+  width: 0%;
+}
+/* set the screen preferences */
+@media screen and (max-width: 600px) {
+  .choice-container {
+    min-width: 25rem;
+  }
+  #progress-bar {
+    width: 20rem;
+    height: 3rem;
+    border: 0.2rem solid rgb(11, 223, 30);
+    margin-top: 2rem;
+    border-radius: 30px;
+    overflow: hidden;
+  }
+  .choice-container {
+    padding-left: 15rem;
+    display: flex;
+    margin-bottom: 0.8rem;
+    width: 100%;
+    border-radius: 4px;
+    background: rgb(18, 93, 255);
+    font-size: 3rem;
+    max-width: 44rem;
+  }
+  .container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 40rem;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  body {
+    padding-top: rem;
+  }
+}
+#game {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+#question {
+  font-size: xx-large;
+}
