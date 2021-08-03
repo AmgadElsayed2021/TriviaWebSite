@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/409704a3fa.js" crossorigin="anonymous"></script>
+    <div class="musicPlayer"><audio controls loop autoplay>
+            <source src="clapping.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio></div>
+</head>
+
+<body>
+
+    <div class="container">
+        <div id="end" class="flex-center flex-column">
+            <h1>Your score</h1>
+            <h1 id="finalScore">0</h1>
+            <!-- <form class="end-form-container">
+                <h2 id="end-text">Enter your name below to save your score!</h2>
+                <input type="text" name="name" id="username" placeholder="Enter Your Name">
+                <button class="btn" id="saveScoreBtn" type="submit" onclick="SaveHighScore(event)" disabled >save</button>
+            </form> -->
+            <a href="game.html" class="btn">Play Again!</a>
+            <a href="index.html" class="btn">Go Home<i class="fas fa-home"></i></a>
+        </div>
+    </div>
+    </div>
+    <script src="end.js"></script>
+</body>
+
+</html>
