@@ -131,8 +131,8 @@ body {
     /* width: 100%; */
     border-radius: 2px;
     background: rgb(18, 93, 255);
-    font-size: 2rem;
-    max-width: 40rem;
+    font-size: 3rem;
+    max-width: 30rem;
   }
   .container {
     width: 100vw;
@@ -140,15 +140,15 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 40rem;
+    max-width: 30rem;
     margin: 0 auto;
     padding: 2rem;
   }
   body {
-    padding-top: rem;
+    padding-top: 2rem;
   }
   #question {
-    font-size: x-large;
+    font-size: large;
   }
 }
 #game {
