@@ -145,6 +145,6 @@ body {
 .choice-container {
   height: 5rem;
 }
-/* #musicPlayer1 {
+audio {
   display: none;
-} */
+}
